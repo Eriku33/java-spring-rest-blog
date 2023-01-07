@@ -17,6 +17,7 @@ public class Author {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Version private Long version;
     @OneToMany
     private final List<Post> posts;
     private String firstname;
